@@ -41,9 +41,9 @@ nazev_column = st.column_config.TextColumn(label="Název společnosti")
 market_cap_column = st.column_config.TextColumn(label="Tržní kapitalizace 💬",help="📍**v mld. USD**")
 price_column = st.column_config.TextColumn(label="Cena za 1 akcii 💬", help="📍**Uzavírací cena za předchozí den (v USD)**")
 
-# Adjust the index to start from 1 and display only the first 50 companies
+# Adjust the index to start from 1 and display only the first 25 companies
 data.reset_index(drop=True, inplace=True)
-data = data.head(50)
+data = data.head(25)
 data.index = data.index + 1
 
 data = data[['Logo', 'Name', 'Market Cap', 'Price']]
