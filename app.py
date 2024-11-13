@@ -50,7 +50,7 @@ data = data[['Logo', 'Name', 'Market Cap', 'Price']]
 
 
 # Display the dataframe
-st.dataframe(data, height=913, column_config={"Logo": image_column,"Name":nazev_column,'Market Cap':market_cap_column,'Price':price_column})
+st.dataframe(data, height=1826, column_config={"Logo": image_column,"Name":nazev_column,'Market Cap':market_cap_column,'Price':price_column})
 
 import datetime
 
